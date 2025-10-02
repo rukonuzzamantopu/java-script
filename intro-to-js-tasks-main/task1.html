@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taka Calculator</title>
+</head>
+<body>
+  <h1>Taka Calculator</h1>
+  <p id="result"></p>
+
+  <script>
+    const taka = parseInt(prompt("Enter the taka you have:"), 10);
+    const cost = parseInt(prompt("Enter the total cost:"), 10);
+    const remaining = taka - cost;
+
+    // show result on the page instead of console only
+    document.getElementById("result").textContent = "Remaining: " + remaining;
+  </script>
+</body>
+</html>
