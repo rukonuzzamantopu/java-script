@@ -10,3 +10,22 @@ if you get less than 80 go to home and sleep and act sad
 Note: 
 use nested if-else-if-else
 */
+
+
+const score = 85;
+if (score > 80) {
+    console.log('You are doing great!');
+    const friendScore = 75;
+    if (friendScore > 80) {
+        console.log('Go for lunch together!');
+    } else if (friendScore >= 60) {
+        console.log('Good luck next time!');
+    } else if (friendScore >= 40) {
+        console.log('Keep your message unseen.');
+    } else {
+        console.log('Block your friend.');
+    }
+} else {
+    console.log('Go home and sleep.');
+}
+
