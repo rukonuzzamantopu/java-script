@@ -5,4 +5,8 @@
 // Remove the last tourist destination you have added
 // display the final array as output
 
-
+const touristDestinations = ['Paris', 'New York', 'Tokyo'];
+touristDestinations.push('London');
+touristDestinations.push('Sydney', 'Rome'); 
+touristDestinations.pop();
+console.log(touristDestinations); 

@@ -7,3 +7,18 @@
 
 // Print a message to the console indicating whether the element is present in the array or not.
 
+const books = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby'];
+
+if (books.includes('JavaScript')) {
+    console.log('The array contains a JavaScript book.');
+} else {
+    console.log('The array does not contain a JavaScript book.');
+}
+
+// const hasJavaScriptBook = books.includes('JavaScript');
+// if (hasJavaScriptBook) {
+//     console.log('The array contains a JavaScript book.');
+// } else {
+//     console.log('The array does not contain a JavaScript book.');
+// }
+
