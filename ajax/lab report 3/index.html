@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX lab report 3 Topu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>US Presidents (AJAX + JSON)</h1>
+        <button id="loadBtn">Load Presidents Data</button>
+    </header>
+
+    <!-- Table wrapper -->
+    <div class="table-wrapper">
+        <table id="presidentsTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>President</th>
+                    <th>Birth Year</th>
+                    <th>Death Year</th>
+                    <th>Took Office</th>
+                    <th>Left Office</th>
+                    <th>Party</th>
+                </tr>
+            </thead>
+            <tbody id="presidentsBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="ajax-presidents.js"></script>
+</body>
+
+</html>

@@ -29,25 +29,27 @@ function renderAnimal(data) {
 
     // Loop through the array of animals
     for (i = 0; i < data.length; i++) {
-        readData += "<p>" + data[i].name + " nothing " + data[i].species + " like this ";
+        readData += "<p>" + data[i].name +" eat ";
 
         // Loop through the 'likes' foods array
         for (ii = 0; ii < data[i].foods.likes.length; ii++) {
             if (ii == 0) {
                 readData += data[i].foods.likes[ii];
             } else {
-                readData += " or " + data[i].foods.likes[ii];
+                readData +=  " and "+ data[i].foods.likes[ii];
             }
         }
 
-        readData += " nothing and also dislike ";
+        readData += "and also catnim that is a" +data[i].species;
+
+        readData += " it does not like ";
 
         // Loop through the 'dislikes' foods array
         for (ii = 0; ii < data[i].foods.dislikes.length; ii++) {
             if (ii == 0) {
                 readData += data[i].foods.dislikes[ii];
             } else {
-                readData += " or " + data[i].foods.dislikes[ii];
+                readData += " nothing " + data[i].foods.dislikes[ii];
             }
         }
 
